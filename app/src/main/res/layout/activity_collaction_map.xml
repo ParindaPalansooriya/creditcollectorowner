@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modifica.creditcollectorapp.Collaction_map" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2_Map">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_01_finish"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textView_finish_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/CL_map"
+            android:textColor="@color/font"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/relativeLayout2_Map"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+        </fragment>
+
+        <TextView
+            android:id="@+id/textView_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2_Map"
+            android:layout_centerHorizontal="true"
+            android:text="@string/LD"
+            android:textColor="@color/font2"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+
+</RelativeLayout>

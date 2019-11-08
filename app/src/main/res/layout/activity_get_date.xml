@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modifica.creditcollectorapp.Get_date">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_off"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/button_off"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_below="@+id/datePicker"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rcbutton"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/Button"
+            android:textAllCaps="false"
+            android:textColor="@color/font"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner_off"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignEnd="@id/datePicker"
+            android:layout_alignLeft="@id/datePicker"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@id/datePicker"
+            android:layout_alignStart="@id/datePicker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingStart="20dp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

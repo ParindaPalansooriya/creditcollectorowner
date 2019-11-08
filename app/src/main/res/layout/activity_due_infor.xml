@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modifica.creditcollectorapp.Due_infor">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_01"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/textView_collact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/CL_info"
+            android:textColor="@color/font"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:id="@+id/scrollView2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/nikname"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="18dp"
+        android:text="@string/Loan_num"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="18dp"
+        android:text="@string/payment"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="18dp"
+        android:text="@string/Due"
+        android:textColor="@color/red2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView28"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_below="@+id/textView28"
+        android:layout_marginTop="18dp"
+        android:text="@string/terms"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_below="@+id/textView29"
+        android:layout_marginTop="18dp"
+        android:text="@string/DT"
+        android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dueLoannum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
+            android:layout_toEndOf="@+id/textView17"
+            android:layout_toRightOf="@+id/textView17"
+            android:textSize="20sp"
+            android:textColor="@color/font2"
+            android:text="@string/LD" />
+
+        <TextView
+            android:id="@+id/dueNikname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView17"
+            android:layout_alignLeft="@+id/dueLoannum"
+            android:layout_alignStart="@+id/dueLoannum"
+            android:textSize="20sp"
+            android:textColor="@color/font2"
+            android:text="@string/LD" />
+
+        <TextView
+            android:id="@+id/duePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView28"
+            android:layout_alignLeft="@+id/dueLoannum"
+            android:layout_alignStart="@+id/dueLoannum"
+            android:textSize="20sp"
+            android:textColor="@color/font2"
+            android:text="@string/LD" />
+
+        <TextView
+            android:id="@+id/dueAmmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView28"
+            android:layout_alignLeft="@+id/duePayment"
+            android:layout_alignStart="@+id/duePayment"
+            android:textSize="20sp"
+            android:textColor="@color/red"
+            android:text="@string/LD"/>
+
+        <TextView
+            android:id="@+id/dueTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView29"
+            android:layout_alignLeft="@+id/dueAmmount"
+            android:layout_alignStart="@+id/dueAmmount"
+            android:textSize="20sp"
+            android:textColor="@color/font2"
+            android:text="@string/LD" />
+
+        <TextView
+            android:id="@+id/dueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dueTerms"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/dueTerms"
+            android:text="@string/LD"
+            android:textColor="@color/font2"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_coll_MV"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rcbutton"
+        android:ems="18"
+        android:text="@string/MV"
+        android:textAllCaps="false"
+        android:textColor="@color/font"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
